@@ -43,7 +43,7 @@ export default function Navbar() {
           <NavLink
             to="/"
             aria-label="Dashboard"
-            className="py-1 px-6 text dark:text-neutral-600 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 font-custom text-neutral-900 hover:text-neutral-600 transition-colors"
+            className="py-1 px-6 text text-primary focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 font-custom text-neutral-900 hover:text-neutral-600 transition-colors"
           >
             JIVA
           </NavLink>
