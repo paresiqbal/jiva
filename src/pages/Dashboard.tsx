@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 // assets
 import loveImage from "../assets/love.svg";
 
+// components
+import FeedbackCard from "@/components/FeedbackCard";
+
 export default function Dashboard() {
   return (
     <div className="text-xl">
@@ -38,7 +41,7 @@ export default function Dashboard() {
         </p>
         <img className="lg:w-1/6 sm:w-1/4 pb-2" src={loveImage} alt="love" />
       </div>
-      <div className="py-8">
+      <div className="py-8 border-b-2">
         <h2 className="text-2xl font-semibold">Identitas dan Quotes</h2>
         <div className="py-7 flex flex-col gap-3">
           <h3 className="font-custom text-3xl">Rical</h3>
@@ -70,6 +73,11 @@ export default function Dashboard() {
             Segala hal indah pasti berawal dari mimpi, jadi ayo kita tidur.
           </p>
         </div>
+      </div>
+
+      <div className="text-2xl font-semibold text-center">
+        <h2 className="text-3xl py-8">Testimoni</h2>
+        <FeedbackCard />
       </div>
     </div>
   );
