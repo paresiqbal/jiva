@@ -1,10 +1,32 @@
-import { Button } from "@/components/ui/button";
+// RDD
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+// pages
+import Dashboard from "@/pages/Dashboard";
+import Error from "@/pages/Error";
+
+// layout
+import MainLayout from "@/layout/MainLayout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Dashboard />,
+        errorElement: <Error />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <div className="grid place-content-center h-screen">
-      <h1>Vite Is Awesome</h1>
-      <Button>Click Me</Button>
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }
