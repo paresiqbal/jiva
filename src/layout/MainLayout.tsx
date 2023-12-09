@@ -11,6 +11,9 @@ export default function MainLayout() {
       <main className="p-12 lg:px-36 mx-auto text-gray-900">
         <Outlet />
       </main>
+      <div className="bg-gray-950 py-4 text-center text-white font-bold">
+        JIVA Copyright
+      </div>
     </div>
   );
 }
