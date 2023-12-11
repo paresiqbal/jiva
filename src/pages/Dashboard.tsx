@@ -21,6 +21,13 @@ export default function Dashboard() {
     }
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="text-xl">
       <div className="text-center">
@@ -39,7 +46,9 @@ export default function Dashboard() {
           Kenapa JIVA ?
         </Button>
         <div className="flex justify-between gap-2">
-          <Button variant="outline">Hubungi Kami</Button>
+          <Button onClick={scrollToContact} variant="outline">
+            Hubungi Kami
+          </Button>
           <Button variant="outline">What's your mood today ?</Button>
         </div>
       </div>

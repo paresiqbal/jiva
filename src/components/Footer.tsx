@@ -1,8 +1,9 @@
+// icons
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-white py-4">
+    <footer id="contact" className="bg-gray-950 text-white py-4">
       <div className="container mx-auto">
         <h2 className="font-custom text-3xl font-bold">&copy; JIVA</h2>
         <div className="my-4">
