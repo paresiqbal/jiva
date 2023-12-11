@@ -5,6 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// components
+import FactorCard from "@/components/FactorCard";
+
 export default function Informasi() {
   return (
     <div className="flex flex-col gap-8">
@@ -133,6 +136,15 @@ export default function Informasi() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+      </section>
+
+      <section>
+        <p>
+          Faktor-faktor yang dapat menyebabkan atau memperburuk kecemasan
+          beragam, mencakup elemen biologis, psikologis, lingkungan, dan gaya
+          hidup. Berikut adalah beberapa faktor utama:
+        </p>
+        <FactorCard />
       </section>
     </div>
   );
