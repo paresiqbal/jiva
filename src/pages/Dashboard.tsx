@@ -49,7 +49,14 @@ export default function Dashboard() {
           <Button onClick={scrollToContact} variant="outline">
             Hubungi Kami
           </Button>
-          <Button variant="outline">What's your mood today ?</Button>
+          <a href="/mood">
+            <Button
+              variant="outline"
+              className="hover:bg-primary hover:text-white"
+            >
+              What's your anxiety today ?
+            </Button>
+          </a>
         </div>
       </div>
       <div
