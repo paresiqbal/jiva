@@ -60,7 +60,7 @@ export default function Dashboard() {
         <img className="lg:w-1/6 sm:w-1/4 pb-2" src={loveImage} alt="love" />
       </div>
       <div className="py-8 border-b-2">
-        <h2 className="text-3xl font-semibold">Our Team</h2>
+        <h2 className="text-3xl font-semibold pb-8">Our Team</h2>
         <TeamCard />
       </div>
 
