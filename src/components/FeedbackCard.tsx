@@ -3,7 +3,7 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -29,9 +29,9 @@ export default function FeedbackCard() {
             vero?
           </p>
         </CardContent>
-        <CardFooter>
+        {/* <CardFooter>
           <p>johndoe@gmail.com</p>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
     </div>
   );
