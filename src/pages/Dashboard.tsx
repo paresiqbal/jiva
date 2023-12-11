@@ -1,3 +1,6 @@
+// react
+import { useRef } from "react";
+
 // shadcn
 import { Button } from "@/components/ui/button";
 
@@ -5,9 +8,19 @@ import { Button } from "@/components/ui/button";
 import loveImage from "../assets/love.svg";
 
 // components
+import TeamCard from "@/components/TeamCard";
 import FeedbackCard from "@/components/FeedbackCard";
 
 export default function Dashboard() {
+  const contentRef = useRef(null);
+
+  const scrollToContent = () => {
+    // scroll to "kenapa JIVA"
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="text-xl">
       <div className="text-center">
@@ -22,13 +35,18 @@ export default function Dashboard() {
         </p>
       </div>
       <div className="py-12 flex flex-col justify-center gap-4 items-center border-b-2">
-        <Button className="px-10 py-6 text-xl">Kenapa JIVA ?</Button>
+        <Button onClick={scrollToContent} className="px-10 py-6 text-xl">
+          Kenapa JIVA ?
+        </Button>
         <div className="flex justify-between gap-2">
           <Button variant="outline">Hubungi Kami</Button>
           <Button variant="outline">What's your mood today ?</Button>
         </div>
       </div>
-      <div className="mx-auto flex pt-16 pb-10 flex-col lg:flex-row items-center justify-center gap-8 lg:gap-32 border-b-2">
+      <div
+        ref={contentRef}
+        className="mx-auto flex pt-16 pb-10 flex-col lg:flex-row items-center justify-center gap-8 lg:gap-32 border-b-2"
+      >
         <p className="lg:w-1/2 text-md">
           JIVA berasal dari Bahasa Indonesia yang berarti jiwa. Jiwa sendiri
           berarti nyawa, zat hidup, kehidupan, makhluk hidup, ruh manusia, ruh
@@ -42,37 +60,8 @@ export default function Dashboard() {
         <img className="lg:w-1/6 sm:w-1/4 pb-2" src={loveImage} alt="love" />
       </div>
       <div className="py-8 border-b-2">
-        <h2 className="text-2xl font-semibold">Identitas dan Quotes</h2>
-        <div className="py-7 flex flex-col gap-3">
-          <h3 className="font-custom text-3xl">Rical</h3>
-          <p className="text-md text-slate-800">
-            Cantik itu relatif, tergantung angle kamera, hehe.
-          </p>
-        </div>
-        <div className="py-7 flex flex-col gap-3">
-          <h3 className="font-custom text-3xl">Aliffia</h3>
-          <p className="text-md text-slate-800">
-            Tuhan pasti memberikan jalan buat kita, tapi belom dicor.
-          </p>
-        </div>
-        <div className="py-7 flex flex-col gap-3">
-          <h3 className="font-custom text-3xl">Adni</h3>
-          <p className="text-md text-slate-800">
-            Jangan berharap kepada tim SAR untuk menemukan jodohmu.
-          </p>
-        </div>
-        <div className="py-7 flex flex-col gap-3">
-          <h3 className="font-custom text-3xl">Gisna</h3>
-          <p className="text-md text-slate-800">
-            Life is too short. Smile while you still have teeth.
-          </p>
-        </div>
-        <div className="py-7 flex flex-col gap-3">
-          <h3 className="font-custom text-3xl">Thomas</h3>
-          <p className="text-md text-slate-800">
-            Segala hal indah pasti berawal dari mimpi, jadi ayo kita tidur.
-          </p>
-        </div>
+        <h2 className="text-3xl font-semibold">Our Team</h2>
+        <TeamCard />
       </div>
 
       <div className="text-2xl font-semibold text-center">
