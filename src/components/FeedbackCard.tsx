@@ -21,7 +21,7 @@ export default function FeedbackCard() {
             />
           </Avatar>
           <CardTitle>John Doe</CardTitle>
-          <CardDescription>Mahasiswa</CardDescription>
+          <CardDescription>johndoe@email.com</CardDescription>
         </CardHeader>
         <CardContent className="text-sm">
           <p>

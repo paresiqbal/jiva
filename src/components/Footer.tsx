@@ -44,14 +44,14 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between">
           <p className="mb-2 md:mb-0">
             <span className="font-semibold">Email:</span>{" "}
-            <a href="mailto:contact@jiva.id">contact@jiva.id</a>
+            <a href="mailto:contact@jiva.id">jivaforyouanxiety@gmail.com</a>
           </p>
           <p className="mb-2 md:mb-0">
-            <span className="font-semibold">Phone:</span> +1 (123) 456-7890
+            <span className="font-semibold">Phone:</span> +62 456-7890
           </p>
           <p className="mb-2 md:mb-0">
-            <span className="font-semibold">Address:</span> 1234 Street Name,
-            City, Country
+            <span className="font-semibold">Address:</span> 1234 Jalan Jalan,
+            Jakarta, Indonesia
           </p>
         </div>
         <p className="text-center mt-4">
