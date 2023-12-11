@@ -12,7 +12,7 @@ export default function FactorCard() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12 xl:gap-16 pt-4">
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={dnaImage} alt="dna" className="w-full p-2" />
+        <img src={dnaImage} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Genetika</div>
           <p className="text-gray-700 text-sm">
@@ -23,7 +23,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={brainstorm} alt="dna" className="w-full p-2" />
+        <img src={brainstorm} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Kimia Otak</div>
           <p className="text-gray-700 text-sm">
@@ -35,7 +35,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={social} alt="dna" className="w-full p-2" />
+        <img src={social} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
             Faktor Lingkungan dan Sosial
@@ -49,7 +49,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={experience} alt="dna" className="w-full p-2" />
+        <img src={experience} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
             Pendidikan dan Pengalaman Masa Kecil
@@ -64,7 +64,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={heart} alt="dna" className="w-full p-2" />
+        <img src={heart} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Kondisi Kesehatan</div>
           <p className="text-gray-700 text-sm">
@@ -76,7 +76,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={life} alt="dna" className="w-full p-2" />
+        <img src={life} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Gaya Hidup dan Kebiasaan</div>
           <p className="text-gray-700 text-sm">
@@ -88,7 +88,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={depression} alt="dna" className="w-full p-2" />
+        <img src={depression} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Kepribadian</div>
           <p className="text-gray-700 text-sm">
@@ -100,7 +100,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={bang} alt="dna" className="w-full p-2" />
+        <img src={bang} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
             Perubahan Besar dalam Hidup
@@ -114,7 +114,7 @@ export default function FactorCard() {
       </div>
 
       <div className="rounded overflow-hidden shadow-xl bg-white">
-        <img src={factor} alt="dna" className="w-full p-2" />
+        <img src={factor} alt="dna" className="w-full p-8" />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
             Faktor-faktor yang berkontribusi
