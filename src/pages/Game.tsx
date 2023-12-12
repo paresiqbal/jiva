@@ -1,12 +1,49 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import EmoteCard from "@/components/EmoteCard";
+
+const cardMessages = [
+  "Message for card 1",
+  "Message for card 2",
+  // Add more messages for each card here
+];
 
 export default function Game() {
+  const [name, setName] = useState("");
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const handleCardSelect = (index) => {
+    setSelectedCard(index);
+  };
+
+  const handleSubmit = () => {
+    if (name && selectedCard !== null) {
+      const message = cardMessages[selectedCard];
+      const displayMessage = `Hello, ${name}! ${message}`;
+      alert(displayMessage);
+    } else {
+      alert("Please enter your name and select a card.");
+    }
+  };
+
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-4">TES KECEMASANMU</h1>
-      <div>
-        <Input type="text" placeholder="Nama Kamu" />
+      <h1>Test Kecemasan mu hari ini</h1>
+      <div className="flex flex-col gap-2 w-full max-w-sm items-center space-x-2">
+        <Input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <div className="flex">
+          <EmoteCard onSelect={handleCardSelect} />
+        </div>
       </div>
+      <Button type="button" onClick={handleSubmit}>
+        Submit
+      </Button>
     </div>
   );
 }
