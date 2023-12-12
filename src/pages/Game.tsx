@@ -6,7 +6,9 @@ import EmoteCard from "@/components/EmoteCard";
 const cardMessages = [
   "Message for card 1",
   "Message for card 2",
-  // Add more messages for each card here
+  "Message for card 3",
+  "Message for card 4",
+  "Message for card 5",
 ];
 
 export default function Game() {
