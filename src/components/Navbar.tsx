@@ -74,7 +74,7 @@ export default function Navbar() {
             aria-label="Game"
             className="py-1 px-6 text dark:text-neutral-600 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4  text-neutral-900 hover:text-neutral-600 transition-colors"
           >
-            What's anxiety today ?
+            Tes Kecemasan
           </NavLink>
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function Dashboard() {
               variant="outline"
               className="hover:bg-primary hover:text-white"
             >
-              What's your anxiety today ?
+              Tes Kecemasanmu Hari ini ?
             </Button>
           </a>
         </div>
