@@ -45,8 +45,7 @@ export default function EmoteCard({ onSelect }) {
             <img
               src={image}
               alt={`${names[index]} Image`}
-              className="w-20 h-20"
-              style={{ objectFit: "contain" }}
+              className="w-20 h-20 object-contain"
             />
           </CardHeader>
           <CardContent>

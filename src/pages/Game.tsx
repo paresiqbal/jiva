@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import EmoteCard from "@/components/EmoteCard";
 
 const cardMessages = [
-  "Message for card 1",
+  "Wah saat ini kamu sedang panik ya?  Apa yang sedang terjadi pada dirimu saat ini?  Disini JIVA akan memberikan beberapa tips untuk mengurangi panikmu.",
   "Message for card 2",
   "Message for card 3",
   "Message for card 4",
@@ -23,7 +23,7 @@ export default function Game() {
   const handleSubmit = () => {
     if (name && selectedCard !== null) {
       const message = cardMessages[selectedCard];
-      const newDisplayMessage = `Hello, ${name}! ${message}`;
+      const newDisplayMessage = `Hai, ${name}! ${message}`;
       setDisplayMessage(newDisplayMessage);
     } else {
       setDisplayMessage("Please enter your name and select a card.");
