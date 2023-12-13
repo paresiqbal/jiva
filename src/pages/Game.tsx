@@ -14,6 +14,7 @@ const cardMessages = [
 export default function Game() {
   const [name, setName] = useState("");
   const [selectedCard, setSelectedCard] = useState(null);
+  const [displayMessage, setDisplayMessage] = useState("");
 
   const handleCardSelect = (index) => {
     setSelectedCard(index);
@@ -22,30 +23,35 @@ export default function Game() {
   const handleSubmit = () => {
     if (name && selectedCard !== null) {
       const message = cardMessages[selectedCard];
-      const displayMessage = `Hello, ${name}! ${message}`;
-      alert(displayMessage);
+      const newDisplayMessage = `Hello, ${name}! ${message}`;
+      setDisplayMessage(newDisplayMessage);
     } else {
-      alert("Please enter your name and select a card.");
+      setDisplayMessage("Please enter your name and select a card.");
     }
   };
 
   return (
     <div>
-      <h1>Test Kecemasan mu hari ini</h1>
-      <div className="flex flex-col gap-2 w-full max-w-sm items-center space-x-2">
+      <h1 className="text-3xl font-bold mb-2">Test Kecemasan mu hari ini</h1>
+      <p className="py-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        similique voluptas doloremque, quam quasi at.
+      </p>
+      <div className="flex flex-col gap-2 w-full">
         <Input
           type="text"
-          placeholder="Name"
+          placeholder="Masukan namamu"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <div className="flex">
           <EmoteCard onSelect={handleCardSelect} />
         </div>
+        <Button type="button" onClick={handleSubmit}>
+          Submit
+        </Button>
+        {displayMessage && <p>{displayMessage}</p>}
       </div>
-      <Button type="button" onClick={handleSubmit}>
-        Submit
-      </Button>
     </div>
   );
 }
