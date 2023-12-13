@@ -5,23 +5,28 @@ import EmoteCard from "@/components/EmoteCard";
 
 const cardMessages = {
   1: {
-    title: "Card 1",
+    title:
+      "Wah saat ini kamu sedang panik ya?  Apa yang sedang terjadi pada dirimu saat ini?  Disini JIVA akan memberikan beberapa tips untuk mengurangi panikmu.",
     content: "Message for card 1",
   },
   2: {
-    title: "Card 2",
+    title:
+      "Wah saat ini kamu sedang mengalami kecemasan tingkat berat. Berikut ini Jiva akan membagikan beberapa tips untukmu:",
     content: "Message for card 2",
   },
   3: {
-    title: "Card 3",
+    title:
+      "Wah, kamu sepertinya kamu mengalami kecemasan sedang. Hmm, disini JIVA akan memberikan beberapa tips untuk mengatasi kecemasan kamu saat ini.",
     content: "Message for card 3",
   },
   4: {
-    title: "Card 4",
+    title:
+      "Wah, kamu sepertinya kamu mengalami kecemasan ringan. Hmm, disini JIVA akan memberikan beberapa tips untuk mengatasi kecemasan kamu saat ini.",
     content: "Message for card 4",
   },
   5: {
-    title: "Card 5",
+    title:
+      "Wah saat ini harimu cukup baik. Maka dari itu JIVA akan memberikan tips menjalani hidup untuk lebih bahagia:",
     content: "Message for card 5",
   },
 };
