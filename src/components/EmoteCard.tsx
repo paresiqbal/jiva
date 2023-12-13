@@ -41,11 +41,12 @@ export default function EmoteCard({ onSelect }) {
           }`}
           onClick={() => handleClick(index)}
         >
-          <CardHeader>
+          <CardHeader className="flex justify-center items-center">
             <img
               src={image}
               alt={`${names[index]} Image`}
-              className="w-20 h-20 items-center"
+              className="w-20 h-20"
+              style={{ objectFit: "contain" }}
             />
           </CardHeader>
           <CardContent>
