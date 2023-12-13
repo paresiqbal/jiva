@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import EmoteCard from "@/components/EmoteCard";
@@ -7,7 +7,7 @@ const cardMessages = {
   1: {
     title:
       "Wah saat ini kamu sedang panik ya?  Apa yang sedang terjadi pada dirimu saat ini?  Disini JIVA akan memberikan beberapa tips untuk mengurangi panikmu.",
-    content: "Message for card 1",
+    content: `1. Teknik Pernapasan\nLatih pernapasan dalam dan perlahan untuk menenangkan sistem saraf.\n\n2. Olahraga Ringan\nAktivitas fisik dapat membantu mengurangi tingkat stres dan kecemasan.`,
   },
   2: {
     title:
@@ -31,7 +31,7 @@ const cardMessages = {
   },
 };
 
-export default function Game() {
+const Game = () => {
   const [name, setName] = useState("");
   const [selectedCard, setSelectedCard] = useState(null);
   const [displayTitle, setDisplayTitle] = useState("");
@@ -54,6 +54,23 @@ export default function Game() {
     }
   };
 
+  const renderCardMessages = () => {
+    if (displayTitle && displayContent) {
+      const tips = displayContent.split("\n\n");
+      return (
+        <div className="message">
+          <h2>{displayTitle}</h2>
+          <ol>
+            {tips.map((tip, index) => (
+              <li key={index}>{tip}</li>
+            ))}
+          </ol>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="game-container">
       <h1 className="title">Test Kecemasan mu hari ini</h1>
@@ -74,13 +91,10 @@ export default function Game() {
         <Button type="button" onClick={handleSubmit}>
           Submit
         </Button>
-        {displayTitle && (
-          <div className="message">
-            <h2>{displayTitle}</h2>
-            <p>{displayContent}</p>
-          </div>
-        )}
+        {renderCardMessages()}
       </div>
     </div>
   );
-}
+};
+
+export default Game;
