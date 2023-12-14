@@ -13,7 +13,7 @@ interface EmoteCardProps {
 }
 
 export default function EmoteCard({ onSelect }: EmoteCardProps) {
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState<number>(-1); // Change the initial state to -1
 
   const images = [
     panik,

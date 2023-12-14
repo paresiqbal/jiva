@@ -3,7 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import EmoteCard from "@/components/EmoteCard";
 
-const cardMessages = {
+interface CardMessage {
+  title: string;
+  content: string;
+}
+
+interface CardMessages {
+  [key: number]: CardMessage;
+}
+
+const cardMessages: CardMessages = {
   1: {
     title:
       "Wah saat ini kamu sedang panik ya?  Apa yang sedang terjadi pada dirimu saat ini?  Disini JIVA akan memberikan beberapa tips untuk mengurangi panikmu.",
@@ -36,10 +45,10 @@ const cardMessages = {
 };
 
 const Game = () => {
-  const [name, setName] = useState("");
-  const [selectedCard, setSelectedCard] = useState(null);
-  const [displayTitle, setDisplayTitle] = useState("");
-  const [displayContent, setDisplayContent] = useState("");
+  const [name, setName] = useState<string>("");
+  const [selectedCard, setSelectedCard] = useState<number>(-1); // Initialize as -1
+  const [displayTitle, setDisplayTitle] = useState<string>("");
+  const [displayContent, setDisplayContent] = useState<string>("");
 
   const handleCardSelect = (index: number) => {
     setSelectedCard(index);
