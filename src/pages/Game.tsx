@@ -63,10 +63,16 @@ const Game = () => {
       const tips = displayContent.split("\n\n");
       return (
         <div className="message">
-          <h2>{displayTitle}</h2>
+          <h3 className="py-4">
+            <span>Hai {name}, </span>
+            {displayTitle}
+          </h3>
+
           <ol>
             {tips.map((tip, index) => (
-              <li key={index}>{tip}</li>
+              <li key={index} className="py-2">
+                {tip}
+              </li>
             ))}
           </ol>
         </div>
