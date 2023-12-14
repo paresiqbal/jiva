@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 // Import your images
 import panik from "@/assets/emoji/panik.png";
-import kecemasanBerat from "@/assets/emoji/kecemasanBerat.png";
-// import kecemasanSedang from "@/assets/emoji/kecemasanSedang.png";
-import kecemasanRingan from "@/assets/emoji/kecemasanRingan.png";
-import keadaanBaik from "@/assets/emoji/keadaanBaik.png";
+import kecemasanberat from "@/assets/emoji/kecemasanberat.png";
+import kecemasansedang from "@/assets/emoji/kecemasansedang.png";
+import kecemasanringan from "@/assets/emoji/kecemasanringan.png";
+import keadaanbaik from "@/assets/emoji/keadaanbaik.png";
 
 interface EmoteCardProps {
   onSelect: (index: number) => void;
@@ -17,10 +17,10 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
 
   const images = [
     panik,
-    kecemasanBerat,
-    // kecemasanSedang,
-    kecemasanRingan,
-    keadaanBaik,
+    kecemasanberat,
+    kecemasansedang,
+    kecemasanringan,
+    keadaanbaik,
   ];
   const names = [
     "Panik",
