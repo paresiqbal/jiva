@@ -2,6 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
+import jiva from "@/assets/jiva.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,8 +44,9 @@ export default function Navbar() {
           <NavLink
             to="/"
             aria-label="Dashboard"
-            className="py-1 px-6 text text-primary focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 font-custom text-neutral-900 hover:text-neutral-600 transition-colors"
+            className="py-1 px-6 flex gap-2 items-center text text-primary focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 font-custom text-neutral-900 hover:text-neutral-600 transition-colors"
           >
+            <img src={jiva} alt="logo" className="w-12 h-12" />
             JIVA
           </NavLink>
           <a className="lg:mr-auto"></a>
