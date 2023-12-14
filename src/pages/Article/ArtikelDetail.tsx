@@ -40,7 +40,7 @@ export default function ArtikelDetail() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="mx-auto">
       <div className="mb-4">
         <h2 className="text-3xl font-bold">{article.title}</h2>
         <p className="text-gray-500">{article.date}</p>
