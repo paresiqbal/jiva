@@ -1,4 +1,9 @@
-import { useParams } from "react-router-dom";
+// Rdd
+import { useParams, Link } from "react-router-dom";
+
+// shadcn
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 const dummyData = [
   {
@@ -35,11 +40,25 @@ export default function ArtikelDetail() {
   }
 
   return (
-    <div>
-      <h2 className="text-3xl">{article.title}</h2>
-      <p>{article.description}</p>
-      <p>{article.date}</p>
-      {/* Other content or components to display article details */}
+    <div className="max-w-2xl mx-auto">
+      <div className="mb-4">
+        <h2 className="text-3xl font-bold">{article.title}</h2>
+        <p className="text-gray-500">{article.date}</p>
+      </div>
+      <p className="text-lg mb-4">{article.description}</p>
+      <div className="flex my-6 h-5 items-center space-x-4 text-sm">
+        <div>Blog</div>
+        <Separator orientation="vertical" />
+        <div>Docs</div>
+        <Separator orientation="vertical" />
+        <div>Source</div>
+      </div>
+      <Link
+        to="/artikel"
+        className="text-blue-500 hover:underline mb-4 block my-4"
+      >
+        <Button> &lt; Back to Artikel</Button>
+      </Link>
     </div>
   );
 }
