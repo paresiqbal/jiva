@@ -8,11 +8,7 @@ import kecemasanSedang from "@/assets/emoji/kecemasanSedang.png";
 import kecemasanRingan from "@/assets/emoji/kecemasanRingan.png";
 import keadaanBaik from "@/assets/emoji/keadaanBaik.png";
 
-interface EmoteCardProps {
-  onSelect: (index: number) => void;
-}
-
-export default function EmoteCard({ onSelect }: EmoteCardProps) {
+export default function EmoteCard({ onSelect }) {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const images = [
@@ -30,14 +26,14 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
     "Keadaan Baik",
   ];
 
-  const handleClick = (index: number) => {
+  const handleClick = (index) => {
     setSelectedCard(index);
     onSelect(index);
   };
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-      {images.map((image: string, index: number) => (
+      {images.map((image, index) => (
         <Card
           key={index}
           className={`text-center p-2 ${
