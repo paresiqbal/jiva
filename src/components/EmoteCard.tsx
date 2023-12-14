@@ -30,7 +30,7 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
     "Keadaan Baik",
   ];
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setSelectedCard(index);
     onSelect(index);
   };
