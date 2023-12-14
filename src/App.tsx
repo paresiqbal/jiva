@@ -5,9 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "@/pages/Dashboard";
 import Error from "@/pages/Error";
 import Informasi from "@/pages/Informasi";
-import Artikel from "@/pages/Artikel";
+import Artikel from "@/pages/Article/Artikel";
+import ArtikelDetail from "@/pages/Article/ArtikelDetail";
 import Game from "@/pages/Game";
-import ArtikelDetail from "@/pages/ArtikelDetail";
 
 // layout
 import MainLayout from "@/layout/MainLayout";
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: "/article/:id",
-        element: { ArtikelDetail },
+        path: "ArtikelDetail/:id",
+        element: <ArtikelDetail />,
         errorElement: <Error />,
       },
     ],
