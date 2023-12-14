@@ -52,13 +52,13 @@ const Game = () => {
   const [displayTitle, setDisplayTitle] = useState<string>("");
   const [displayContent, setDisplayContent] = useState<string>("");
 
-  const handleCardSelect = (index: number) => {
-    setSelectedCard(index);
+  const handleCardSelect = (cardNumber: number) => {
+    setSelectedCard(cardNumber);
   };
 
   const handleSubmit = () => {
     if (name && selectedCard !== null) {
-      const selectedCardMessage = cardMessages[String(selectedCard + 1)]; // Convert to string
+      const selectedCardMessage = cardMessages[selectedCard];
       if (selectedCardMessage) {
         setDisplayTitle(selectedCardMessage.title);
         setDisplayContent(selectedCardMessage.content);
