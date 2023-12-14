@@ -30,7 +30,8 @@ const cardMessages = {
   5: {
     title:
       "Wah saat ini harimu cukup baik. Maka dari itu JIVA akan memberikan tips menjalani hidup untuk lebih bahagia:",
-    content: "Message for card 5",
+    content:
+      "1.	Bersyukur\nFokus pada hal-hal positif dalam hidup dan menghargai momen kecil.\n\n2.	Jaga Kesehatan\nMakan seimbang, tidur cukup, dan lakukan olahraga untuk mendukung kesehatan fisik dan mental.\n\n3.	Atur Prioritas\nTetapkan tujuan yang realistis, dan atur prioritas untuk mengurangi stres.\n\n4.	Jalin Hubungan Positif\nBerinteraksi dengan orang yang positif dan mendukung dapat meningkatkan suasana hati.\n\n5.	Belajar dari Pengalaman\nLihat setiap pengalaman sebagai peluang untuk belajar dan berkembang.\n\n6.	Praktikkan Kebaikan\nMelakukan perbuatan baik kepada orang lain dapat memberikan kebahagiaan yang mendalam.\n\n7.	Ciptakan Keseimbangan\nUpayakan keseimbangan antara pekerjaan, waktu pribadi, dan rekreasi.\n\n8.	Terima Diri Sendiri\nTerimalah diri Anda apa adanya dan fokus pada perkembangan pribadi tanpa membandingkan diri dengan orang lain.\n\n9.	Nikmati Momen Sekarang\nHindari terlalu khawatir tentang masa depan atau menyesali masa lalu. Hargai momen sekarang.\n\n10.	Seni dan Kreativitas\nTemukan kebahagiaan dalam seni, musik, atau kegiatan kreatif lainnya.",
   },
 };
 
