@@ -23,11 +23,11 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
     keadaanbaik,
   ];
   const names = [
-    "Panik",
-    "Kecemasan Berat",
-    "Kecemasan Sedang",
-    "Kecemasan Ringan",
-    "Keadaan Baik",
+    "panik",
+    "kecemasanberat",
+    "kecemasansedang",
+    "kecemasanringan",
+    "keadaanbaik",
   ];
 
   const handleClick = (index: number) => {
