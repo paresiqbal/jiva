@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 // Import your images
-import panik from "@/assets/emoji/panik.png";
-import kecemasanberat from "@/assets/emoji/kecemasanberat.png";
-import kecemasansedang from "@/assets/emoji/kecemasansedang.png";
-import kecemasanringan from "@/assets/emoji/kecemasanringan.png";
-import keadaanbaik from "@/assets/emoji/keadaanbaik.png";
+import panik from "../assets/emoji/panik.png";
+import kecemasanberat from "../assets/emoji/kecemasanberat.png";
+import kecemasansedang from "../assets/emoji/kecemasansedang.png";
+import kecemasanringan from "../assets/emoji/kecemasanringan.png";
+import keadaanbaik from "../assets/emoji/keadaanbaik.png";
 
 interface EmoteCardProps {
   onSelect: (index: number) => void;
