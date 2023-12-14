@@ -46,7 +46,9 @@ const cardMessages: CardMessages = {
 
 const Game = () => {
   const [name, setName] = useState<string>("");
-  const [selectedCard, setSelectedCard] = useState<number>(-1); // Initialize as -1
+  const [selectedCard, setSelectedCard] = useState<keyof CardMessages>(
+    -1 as keyof CardMessages
+  );
   const [displayTitle, setDisplayTitle] = useState<string>("");
   const [displayContent, setDisplayContent] = useState<string>("");
 
