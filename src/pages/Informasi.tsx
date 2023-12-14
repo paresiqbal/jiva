@@ -11,7 +11,7 @@ import FactorCard from "@/components/FactorCard";
 export default function Informasi() {
   return (
     <div className="flex flex-col gap-8">
-      <h1 class="text-3xl font-bold">LAYANAN INFORMASI</h1>
+      <h1 className="text-3xl font-bold">LAYANAN INFORMASI</h1>
       <section>
         <p>
           <span className="font-bold">Kecemasan</span> adalah perasaan

@@ -37,7 +37,7 @@ export default function EmoteCard({ onSelect }) {
         <Card
           key={index}
           className={`text-center p-2 ${
-            selectedCard === index ? "bg-gray-500" : ""
+            selectedCard === index ? "bg-primary" : ""
           }`}
           onClick={() => handleClick(index)}
         >
@@ -49,7 +49,13 @@ export default function EmoteCard({ onSelect }) {
             />
           </CardHeader>
           <CardContent>
-            <h2 className="font-bold">{names[index]}</h2>
+            <h2
+              className={`font-bold ${
+                selectedCard === index ? "text-white" : ""
+              }`}
+            >
+              {names[index]}
+            </h2>
           </CardContent>
         </Card>
       ))}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import EmoteCard from "@/components/EmoteCard";
@@ -76,9 +76,9 @@ const Game = () => {
   };
 
   return (
-    <div className="game-container">
-      <h1 className="title">Test Kecemasan mu hari ini</h1>
-      <p className="description">
+    <div>
+      <h1 className="text-3xl font-bold">Test Kecemasan mu hari ini</h1>
+      <p className="py-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
         similique voluptas doloremque, quam quasi at.
       </p>
