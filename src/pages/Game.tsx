@@ -17,13 +17,15 @@ const cardMessages = {
   },
   3: {
     title:
-      "Wah, kamu sepertinya kamu mengalami kecemasan sedang. Hmm, disini JIVA akan memberikan beberapa tips untuk mengatasi kecemasan kamu saat ini.",
-    content: "Message for card 3",
+      "Wah, kamu sepertinya kamu mengalami kecemasan sedang. Hmm, disini JIVA akan memberikan beberapa tips untuk mengatasi kecemasan kamu saat ini.\n\nMengatasi kecemasan sedang memerlukan pendekatan yang dapat membantu Anda meredakan gejala kecemasan dan mendukung kesejahteraan mental Anda. Berikut adalah beberapa tips yang mungkin membantu:",
+    content:
+      "1.	Bernapas dengan Dalam\nFokus pada napas dalam dan perlahan. Ambil napas dalam-dalam melalui hidung, tahan sejenak, dan kemudian hembuskan secara perlahan melalui mulut. Proses ini dapat membantu menurunkan tingkat kecemasan.\n\n2.	Pikirkan Positif\nGantilah pikiran negatif dengan yang positif. Fokus pada hal-hal yang baik dalam hidup Anda dan ingatkan diri Anda bahwa perasaan kecemasan bersifat sementara.\n\n3.	Identifikasi Pikiran Irasional\nJika mungkin, kenali pikiran-pikiran yang mungkin tidak rasional atau berlebihan. Tantang dan gantilah pikiran tersebut dengan yang lebih realistis dan positif.\n\n4.	Bergerak atau Berolahraga Ringan\nAktivitas fisik dapat membantu melepaskan energi dan meningkatkan suasana hati. Lakukan olahraga ringan atau berjalan kaki untuk membantu meredakan kecemasan.\n\n5.	Praktekkan Meditasi atau Relaksasi\nCoba teknik meditasi atau relaksasi seperti meditasi pernapasan, meditasi mindfulness, atau yoga. Praktek ini dapat membantu menenangkan pikiran dan tubuh.\n\n6.	Jangan Isolasi Diri\nBicarakan perasaan Anda dengan orang yang dipercayai. Kadang-kadang berbicara tentang kecemasan dapat membantu Anda merasa didengar dan didukung.\n\n7.	Tetap Teratur dalam Kegiatan Harian\nMenjaga rutinitas harian dapat memberikan struktur dan stabilitas emosional. Cobalah untuk tetap menjalani kegiatan sehari-hari Anda, meskipun itu terasa sulit.\n\n8.	Hindari Stimulan\nBatasi konsumsi kafein, gula, dan stimulan lainnya, karena hal ini dapat meningkatkan tingkat kecemasan.\n\n9.	Jangan Terlalu Keras pada Diri Sendiri\nIngatlah bahwa kecemasan adalah sesuatu yang umum, dan tidak ada yang salah dengan merasa cemas. Jangan terlalu keras pada diri sendiri dan beri diri Anda izin untuk merasa tidak sempurna.",
   },
   4: {
     title:
       "Wah, kamu sepertinya kamu mengalami kecemasan ringan. Hmm, disini JIVA akan memberikan beberapa tips untuk mengatasi kecemasan kamu saat ini.",
-    content: "Message for card 4",
+    content:
+      "1.	Teknik Pernapasan\nLatih pernapasan dalam dan perlahan untuk menenangkan sistem saraf.\n\n2.	Olahraga Ringan\nAktivitas fisik dapat membantu mengurangi tingkat stres dan kecemasan.\n\n3.	Meditasi atau Relaksasi\nLuangkan waktu untuk meditasi atau teknik relaksasi seperti yoga.\n\n4.	Tetap Terhubung\nBerbicaralah dengan orang yang dipercayai untuk berbagi perasaan dan mendapatkan dukungan.\n\n5.	Kelola Waktu\nRencanakan tugas dengan baik untuk mengurangi rasa terburu-buru dan tekanan.\n\n6.	Hindari Stimulan\nBatasi konsumsi kafein, nikotin, dan hindari alkohol berlebihan.\n\n7.	Fokus pada Hal Positif\nTemukan kegiatan yang membawa kebahagiaan dan fokus pada hal-hal positif dalam hidup.\n\n8.	Tidur Cukup\nPastikan Anda mendapatkan tidur yang cukup untuk menjaga keseimbangan emosional.",
   },
   5: {
     title:
