@@ -165,18 +165,18 @@ export default function Informasi() {
           <AccordionItem value="item-1">
             <AccordionTrigger>1. Terapi Psikologis:</AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Terapi Perilaku Kognitif (CBT): CBT membantu mengidentifikasi
                   dan mengubah pola pikir dan perilaku negatif yang menyebabkan
                   kecemasan.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Terapi Pemaparan: Khusus untuk fobia atau kecemasan sosial,
                   terapi ini melibatkan pemaparan bertahap dan terkontrol
                   terhadap objek atau situasi yang ditakuti.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Konseling: Berbicara dengan seorang terapis atau konselor
                   dapat membantu mengatasi kecemasan dengan mengeksplorasi akar
                   masalah dan mengembangkan strategi mengatasinya.
@@ -189,16 +189,16 @@ export default function Informasi() {
               2. Teknik Relaksasi dan Pengurangan Stres:
             </AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Meditasi dan Mindfulness: Latihan ini membantu menenangkan
                   pikiran dan mengurangi stres.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Latihan Pernapasan: Teknik pernapasan dalam dapat menenangkan
                   sistem saraf dan mengurangi gejala kecemasan.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Yoga dan Tai Chi: Kombinasi gerakan lembut, pernapasan, dan
                   meditasi yang ada dalam yoga dan tai chi dapat membantu
                   mengurangi kecemasan.
@@ -209,16 +209,16 @@ export default function Informasi() {
           <AccordionItem value="item-3">
             <AccordionTrigger>3. Perubahan Gaya Hidup:</AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Olahraga Teratur: Aktivitas fisik secara teratur dapat
                   mengurangi stres dan meningkatkan suasana hati.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Pola Tidur yang Baik: Mendapatkan tidur yang cukup dan
                   berkualitas penting untuk mengelola kecemasan.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Diet Seimbang: Makan makanan sehat dan menghindari stimulan
                   seperti kafein dan gula dapat membantu mengurangi gejala
                   kecemasan.
@@ -229,12 +229,12 @@ export default function Informasi() {
           <AccordionItem value="item-4">
             <AccordionTrigger>4. Dukungan Sosial:</AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Berbicara dengan Orang Terdekat: Membagikan perasaan dengan
                   teman atau keluarga dapat memberikan dukungan emosional.
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Grup Dukungan: Berpartisipasi dalam grup dukungan dapat
                   memberikan kesempatan untuk berbagi pengalaman dan belajar
                   dari orang lain yang mengalami kecemasan.
@@ -245,8 +245,8 @@ export default function Informasi() {
           <AccordionItem value="item-5">
             <AccordionTrigger>5. Pengobatan:</AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Antidepresan dan Benzodiazepin: Dalam beberapa kasus,
                   obat-obatan mungkin direkomendasikan oleh dokter untuk
                   membantu mengelola gejala.
@@ -257,12 +257,12 @@ export default function Informasi() {
           <AccordionItem value="item-6">
             <AccordionTrigger>6. Teknik Manajemen Stres:</AccordionTrigger>
             <AccordionContent>
-              <ul class="list-disc pl-6 mt-2">
-                <li class="mb-2">
+              <ul className="list-disc pl-6 mt-2">
+                <li className="mb-2">
                   Manajemen Waktu: Mengorganisir jadwal dan menghindari
                   kelebihan beban dapat membantu mengurangi stress,
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   Kegiatan yang Menenangkan: Melakukan hobi atau kegiatan yang
                   menenangkan pikiran dapat mengurangi kecemasan.
                 </li>

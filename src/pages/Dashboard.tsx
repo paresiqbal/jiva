@@ -12,10 +12,9 @@ import TeamCard from "@/components/TeamCard";
 import FeedbackCard from "@/components/FeedbackCard";
 
 export default function Dashboard() {
-  const contentRef = useRef(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToContent = () => {
-    // scroll to "kenapa JIVA"
     if (contentRef.current) {
       contentRef.current.scrollIntoView({ behavior: "smooth" });
     }
