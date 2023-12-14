@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 // Import your images
 import panik from "@/assets/emoji/panik.png";
 import kecemasanBerat from "@/assets/emoji/kecemasanBerat.png";
-import KecemasanSedang from "@/assets/emoji/KecemasanSedang.png";
+import kecemasanSedang from "@/assets/emoji/kecemasanSedang.png";
 import kecemasanRingan from "@/assets/emoji/kecemasanRingan.png";
 import keadaanBaik from "@/assets/emoji/keadaanBaik.png";
 
@@ -18,7 +18,7 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
   const images = [
     panik,
     kecemasanBerat,
-    KecemasanSedang,
+    kecemasanSedang,
     kecemasanRingan,
     keadaanBaik,
   ];
