@@ -30,10 +30,13 @@ const dummyData = [
 ];
 
 export default function ArtikelDetail() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
+  const parsedId = id ? parseInt(id, 10) : undefined;
 
   // Find the article in dummyData that matches the id parameter
-  const article = dummyData.find((item) => item.id === parseInt(id));
+  const article = parsedId
+    ? dummyData.find((item) => item.id === parsedId)
+    : undefined;
 
   if (!article) {
     return <div>Article not found</div>;
