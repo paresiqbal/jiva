@@ -7,6 +7,7 @@ import Error from "@/pages/Error";
 import Informasi from "@/pages/Informasi";
 import Artikel from "@/pages/Artikel";
 import Game from "@/pages/Game";
+import ArtikelDetail from "@/pages/ArtikelDetail";
 
 // layout
 import MainLayout from "@/layout/MainLayout";
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/mood",
         element: <Game />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/article/:id",
+        element: { ArtikelDetail },
         errorElement: <Error />,
       },
     ],
