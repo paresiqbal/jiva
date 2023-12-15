@@ -1,6 +1,14 @@
 import { Button } from "@/components/ui/button";
 
-export default function Jumbotron({ scrollToContent, scrollToContact }) {
+interface JumbotronProps {
+  scrollToContent: () => void; // Define the type for scrollToContent
+  scrollToContact: () => void; // Define the type for scrollToContact
+}
+
+export default function Jumbotron({
+  scrollToContent,
+  scrollToContact,
+}: JumbotronProps) {
   return (
     <div>
       <div className="text-center">

@@ -5,15 +5,18 @@ import { useState, useRef, useEffect } from "react";
 import jiva from "@/assets/jiva.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const navbarRef = useRef(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleOutsideClick = (event) => {
-    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+  const handleOutsideClick = (event: React.MouseEvent) => {
+    if (
+      navbarRef.current &&
+      !navbarRef.current.contains(event.target as Node)
+    ) {
       setIsOpen(false);
     }
   };
