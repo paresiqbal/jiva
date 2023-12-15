@@ -5,10 +5,6 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-interface ArticleDetailParams {
-  id: string;
-}
-
 const dummyData = [
   {
     id: 1,
