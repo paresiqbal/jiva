@@ -51,7 +51,8 @@ const dummyData = [
 ];
 
 export default function ArtikelDetail() {
-  const { id } = useParams<{ id: string }>();
+  const params = useParams<{ id: string }>();
+  const { id } = params;
 
   const parsedId = parseInt(id, 10);
   const article = dummyData.find((item) => item.id === parsedId);
