@@ -1,17 +1,40 @@
 // RDD
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
 
 import jiva from "@/assets/jiva.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navbarRef = useRef(null);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleOutsideClick = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  const closeNavbarOnLocationChange = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    closeNavbarOnLocationChange();
+  }, [location]);
+
   return (
-    <nav className="mx-auto p-4 lg:p-0 bg-white border-b-2">
+    <nav ref={navbarRef} className="mx-auto p-4 lg:p-0 bg-white border-b-2">
       <div className="container mx-auto flex items-center justify-between">
         <button
           id="menu"
