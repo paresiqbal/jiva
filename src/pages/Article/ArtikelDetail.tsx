@@ -51,7 +51,7 @@ const dummyData = [
 ];
 
 export default function ArtikelDetail() {
-  const params = useParams<{ id: string }>();
+  const params = useParams() as { id: string };
   const { id } = params;
 
   const parsedId = parseInt(id, 10);
