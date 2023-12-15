@@ -1,15 +1,13 @@
 // react
 import { useRef } from "react";
 
-// shadcn
-import { Button } from "@/components/ui/button";
-
 // assets
 import loveImage from "../assets/love.svg";
 
 // components
 import TeamCard from "@/components/TeamCard";
 import FeedbackCard from "@/components/FeedbackCard";
+import Jumbotron from "@/components/Jumbotron";
 
 export default function Dashboard() {
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -29,35 +27,10 @@ export default function Dashboard() {
 
   return (
     <div className="text-xl">
-      <div className="text-center">
-        <h1 className="text-8xl lg:text-9xl font-extrabold font-custom py-12">
-          JIVA
-        </h1>
-        <p className="text-xl lg:text-2xl text-slate-700">
-          Eksplorasi mendalam tentang kecemasan: definisi, jenis, gejala, dan
-          cara mengelolanya. Temukan teknik pernapasan, meditasi, olahraga, dan
-          strategi relaksasi di JIVA. Sumber terpercaya untuk referensi yang
-          dapat diandalkan.
-        </p>
-      </div>
-      <div className="py-12 flex flex-col justify-center gap-4 items-center border-b-2">
-        <Button onClick={scrollToContent} className="px-10 py-6 text-xl">
-          Kenapa JIVA ?
-        </Button>
-        <div className="flex justify-between gap-2">
-          <Button onClick={scrollToContact} variant="outline">
-            Hubungi Kami
-          </Button>
-          <a href="/mood">
-            <Button
-              variant="outline"
-              className="hover:bg-primary hover:text-white"
-            >
-              Tes Kecemasanmu Hari ini ?
-            </Button>
-          </a>
-        </div>
-      </div>
+      <Jumbotron
+        scrollToContent={scrollToContent}
+        scrollToContact={scrollToContact}
+      />
       <div
         ref={contentRef}
         className="mx-auto flex pt-16 pb-10 flex-col lg:flex-row items-center justify-center gap-8 lg:gap-32 border-b-2"
