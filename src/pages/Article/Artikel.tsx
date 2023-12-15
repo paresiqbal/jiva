@@ -100,7 +100,7 @@ export default function Artikel() {
             key={pageNumber + 1}
             onClick={() => handlePageChange(pageNumber + 1)}
             className={`mx-2 py-1 px-3 rounded-lg ${
-              currentPage === pageNumber + 1 ? "bg-gray-300" : "bg-gray-100"
+              currentPage === pageNumber + 1 ? "bg-primary" : "bg-gray-100"
             }`}
           >
             {pageNumber + 1}

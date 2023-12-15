@@ -62,25 +62,27 @@ export default function ArtikelDetail() {
   }
 
   return (
-    <div className="mx-auto px-6 bg-white py-12">
-      <div className="mb-4">
-        <h2 className="text-3xl font-bold">{article.title}</h2>
-        <p className="text-gray-500">{article.date}</p>
+    <div className="mx-auto py-12">
+      <div className="px-6 bg-white py-4 rounded-md">
+        <div className="mb-4 ">
+          <h2 className="text-3xl font-bold">{article.title}</h2>
+          <p className="text-gray-500">{article.date}</p>
+        </div>
+        <p className="text-lg mb-4">{article.description}</p>
+        <div className="flex my-6 h-5 items-center space-x-4 text-sm">
+          <div>Blog</div>
+          <Separator orientation="vertical" />
+          <div>Artikel</div>
+          <Separator orientation="vertical" />
+          <div>Sumber</div>
+        </div>
+        <Link
+          to="/artikel"
+          className="text-blue-500 hover:underline mb-4 block my-4"
+        >
+          <Button> &lt; Kembali ke Artikel</Button>
+        </Link>
       </div>
-      <p className="text-lg mb-4">{article.description}</p>
-      <div className="flex my-6 h-5 items-center space-x-4 text-sm">
-        <div>Blog</div>
-        <Separator orientation="vertical" />
-        <div>Artikel</div>
-        <Separator orientation="vertical" />
-        <div>Sumber</div>
-      </div>
-      <Link
-        to="/artikel"
-        className="text-blue-500 hover:underline mb-4 block my-4"
-      >
-        <Button> &lt; Kembali ke Artikel</Button>
-      </Link>
     </div>
   );
 }
