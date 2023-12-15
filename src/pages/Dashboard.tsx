@@ -26,7 +26,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="text-xl">
+    <div className="text-xl bg-white px-6">
       <Jumbotron
         scrollToContent={scrollToContent}
         scrollToContact={scrollToContact}
