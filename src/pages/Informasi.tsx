@@ -10,9 +10,9 @@ import FactorCard from "@/components/FactorCard";
 
 export default function Informasi() {
   return (
-    <div className="flex flex-col gap-8 px-6 bg-white py-12">
-      <h1 className="text-3xl font-bold">LAYANAN INFORMASI</h1>
-      <section>
+    <div className="flex flex-col gap-8 px-6 py-12">
+      <section className="bg-white rounded-md px-6 py-6">
+        <h1 className="text-3xl font-bold">LAYANAN INFORMASI</h1>
         <p>
           <span className="font-bold">Kecemasan</span> adalah perasaan
           ketakutan, kekhawatiran, atau gugup yang sering muncul sebagai reaksi
@@ -74,7 +74,7 @@ export default function Informasi() {
         </Accordion>
       </section>
 
-      <section>
+      <section className="bg-white rounded-md px-6 py-6">
         <p>
           <span className="font-bold">Mengenali dan mengatasi kecemasan</span>
           hidup. Pendekatan eksistensial (Corey, 1996:178) melihat ada dua jenis
@@ -101,7 +101,7 @@ export default function Informasi() {
         </Accordion>
       </section>
 
-      <section>
+      <section className="bg-white rounded-md px-6 py-6">
         <p>
           Sigmund Freud (dalam Corey, 1996: 95) mengemukakan, bahwa kecemasan
           adalah keadaan tegang yang memaksa untuk berbuat sesuatu. Ada tiga
@@ -137,7 +137,7 @@ export default function Informasi() {
         </Accordion>
       </section>
 
-      <section>
+      <section className="bg-white rounded-md px-6 py-6">
         <p>
           Faktor-faktor yang dapat menyebabkan atau memperburuk kecemasan
           beragam, mencakup elemen biologis, psikologis, lingkungan, dan gaya
@@ -155,7 +155,7 @@ export default function Informasi() {
         </Accordion>
       </section>
 
-      <section>
+      <section className="bg-white rounded-md px-6 py-6">
         <p>
           Menangani kecemasan melibatkan kombinasi pendekatan yang mencakup
           terapi, perubahan gaya hidup, dan kadang-kadang obat-obatan. Berikut
