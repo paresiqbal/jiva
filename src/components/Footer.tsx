@@ -1,11 +1,17 @@
 // icons
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
+// assets
+import jiva from "@/assets/jiva.png";
+
 export default function Footer() {
   return (
     <footer id="contact" className="bg-gray-950 text-white py-4">
       <div className="container mx-auto">
-        <h2 className="font-custom text-3xl font-bold">&copy; JIVA</h2>
+        <h2 className="font-custom text-3xl font-bold flex gap-2 items-center">
+          <img src={jiva} alt="logo" className="w-12 h-12" />
+          &copy; JIVA
+        </h2>
         <div className="my-4">
           <h3 className="font-semibold text-xl pb-2">Contact</h3>
           <div className="flex flex-col md:flex-row gap-2">

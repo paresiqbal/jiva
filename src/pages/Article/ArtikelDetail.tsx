@@ -10,21 +10,21 @@ const dummyData = [
     id: 1,
     title: "Memahami Kekhawatiran",
     description:
-      "Kekhawatiran ibarat tamu tak diundang dalam pikiran kita, sering kali menyelinap masuk di saat yang tidak kita duga.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
     date: "12 Des, 2023",
   },
   {
     id: 2,
     title: "Strategi Mengatasi Kekhawatiran",
     description:
-      "Ketika kekhawatiran mulai membebani kita, penting bagi kita untuk mempunyai strategi untuk mengatasinya. Terlibat dalam aktivitas kesadaran, seperti meditasi",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
     date: "07 Oct, 2023",
   },
   {
     id: 3,
     title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
     description:
-      "Kekhawatiran sering kali menyertai saat-saat perubahan, namun hal tersebut tidak harus mendikte pengalaman kita. Daripada melihat perubahan hanya melalui kacamata kecemasan, kita bisa melakukannya",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
     date: "30 Arp, 2023",
   },
 ];
@@ -39,7 +39,7 @@ export default function ArtikelDetail() {
     : undefined;
 
   if (!article) {
-    return <div>Article not found</div>;
+    return <div>Artikel Tidak Ditemukan</div>;
   }
 
   return (
@@ -52,15 +52,15 @@ export default function ArtikelDetail() {
       <div className="flex my-6 h-5 items-center space-x-4 text-sm">
         <div>Blog</div>
         <Separator orientation="vertical" />
-        <div>Docs</div>
+        <div>Artikel</div>
         <Separator orientation="vertical" />
-        <div>Source</div>
+        <div>Sumber</div>
       </div>
       <Link
         to="/artikel"
         className="text-blue-500 hover:underline mb-4 block my-4"
       >
-        <Button> &lt; Back to Artikel</Button>
+        <Button> &lt; Kembali ke Artikel</Button>
       </Link>
     </div>
   );
