@@ -31,6 +31,27 @@ const dummyData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
     date: "30 Arp, 2023",
   },
+  {
+    id: 4,
+    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
+    date: "30 Arp, 2023",
+  },
+  {
+    id: 5,
+    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
+    date: "30 Arp, 2023",
+  },
+  {
+    id: 6,
+    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, provident assumenda voluptates praesentium voluptatem unde ab sunt perferendis, temporibus laboriosam aliquam repellendus eum in doloribus iure sapiente officiis velit soluta quae eius, eaque fugit dolores deleniti distinctio. At, culpa perspiciatis cumque voluptas illo iusto numquam nemo fuga exercitationem deleniti error.",
+    date: "30 Arp, 2023",
+  },
 ];
 
 export default function ArtikelDetail() {
