@@ -53,10 +53,13 @@ const Game = () => {
   const [displayContent, setDisplayContent] = useState<string>("");
 
   const handleCardSelect = (cardNumber: number) => {
-    setSelectedCard(cardNumber);
+    const adjustedCardNumber = cardNumber + 1;
+    setSelectedCard(adjustedCardNumber);
   };
 
   const handleSubmit = () => {
+    console.log("Name:", name);
+    console.log("Selected card:", selectedCard);
     if (name && selectedCard !== null) {
       const selectedCardMessage = cardMessages[selectedCard];
       if (selectedCardMessage) {
