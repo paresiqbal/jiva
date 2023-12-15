@@ -12,25 +12,25 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const handleOutsideClick = (event: React.MouseEvent) => {
-    if (
-      navbarRef.current &&
-      !navbarRef.current.contains(event.target as Node)
-    ) {
-      setIsOpen(false);
-    }
-  };
+  // const handleOutsideClick = (event: React.MouseEvent) => {
+  //   if (
+  //     navbarRef.current &&
+  //     !navbarRef.current.contains(event.target as Node)
+  //   ) {
+  //     setIsOpen(false);
+  //   }
+  // };
 
   const closeNavbarOnLocationChange = () => {
     setIsOpen(false);
   };
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleOutsideClick);
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleOutsideClick);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleOutsideClick);
+  //   };
+  // }, []);
 
   useEffect(() => {
     closeNavbarOnLocationChange();
