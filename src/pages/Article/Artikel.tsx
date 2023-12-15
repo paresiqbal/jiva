@@ -6,7 +6,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const dummyData = [
+interface Article {
+  title: string;
+  description: string;
+  date: string;
+  id: number;
+}
+
+const dummyData: Article[] = [
   {
     title: "Memahami Kekhawatiran",
     description:

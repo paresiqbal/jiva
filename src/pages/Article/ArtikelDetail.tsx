@@ -5,6 +5,10 @@ import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
+interface ArticleDetailParams {
+  id: string;
+}
+
 const dummyData = [
   {
     id: 1,
@@ -30,7 +34,7 @@ const dummyData = [
 ];
 
 export default function ArtikelDetail() {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams<ArticleDetailParams>();
   const parsedId = id ? parseInt(id, 10) : undefined;
 
   // Find the article in dummyData that matches the id parameter
