@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 
 interface JumbotronProps {
-  scrollToContent: () => void; // Define the type for scrollToContent
-  scrollToContact: () => void; // Define the type for scrollToContact
+  scrollToContent: () => void;
+  scrollToContact: () => void;
 }
 
 export default function Jumbotron({
