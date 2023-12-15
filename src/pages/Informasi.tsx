@@ -186,7 +186,7 @@ export default function Informasi() {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger>
-              2. Teknik Relaksasi dan Pengurangan Stres:
+              2. Relaksasi dan Pengurangan Stres:
             </AccordionTrigger>
             <AccordionContent>
               <ul className="list-disc pl-6 mt-2">
