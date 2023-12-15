@@ -93,7 +93,7 @@ const Game = () => {
   };
 
   return (
-    <div>
+    <div className="px-6 bg-white py-12">
       <h1 className="text-3xl font-bold">Test Kecemasan mu hari ini</h1>
       <p className="py-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus

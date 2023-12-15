@@ -10,7 +10,7 @@ import FactorCard from "@/components/FactorCard";
 
 export default function Informasi() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 px-6 bg-white py-12">
       <h1 className="text-3xl font-bold">LAYANAN INFORMASI</h1>
       <section>
         <p>

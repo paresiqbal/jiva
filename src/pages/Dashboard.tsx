@@ -26,7 +26,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="text-xl bg-white px-6">
+    <div className="text-xl bg-white px-6 py-12">
       <Jumbotron
         scrollToContent={scrollToContent}
         scrollToContact={scrollToContact}

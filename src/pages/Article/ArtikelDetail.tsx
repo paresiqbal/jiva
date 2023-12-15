@@ -43,7 +43,7 @@ export default function ArtikelDetail() {
   }
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto px-6 bg-white py-12">
       <div className="mb-4">
         <h2 className="text-3xl font-bold">{article.title}</h2>
         <p className="text-gray-500">{article.date}</p>
