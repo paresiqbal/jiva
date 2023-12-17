@@ -18,7 +18,7 @@ import thomas from "@/assets/thomas.jpg";
 
 export default function TeamCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-content-center">
       <Card className="flex flex-col items-center text-center">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
