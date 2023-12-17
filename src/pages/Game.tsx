@@ -97,12 +97,8 @@ const Game = () => {
 
   return (
     <div className="py-12">
-      <div className="bg-white rounded-md px-6 py-2 mb-2">
+      <div className="bg-[#9DC183] rounded-md px-6 py-2 mb-2">
         <h1 className="text-3xl font-bold">Test Kecemasan mu hari ini</h1>
-        <p className="py-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus similique voluptas doloremque, quam quasi at.
-        </p>
       </div>
       <div className="flex flex-col gap-2 w-full bg-white rounded-md px-6 py-2">
         <Input

@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 // assets
 import rical from "@/assets/rical.jpg";
@@ -30,17 +30,8 @@ export default function TeamCard() {
           <p>Cantik itu relatif, tergantung angle kamera, hehe.</p>
         </CardContent>
         <CardFooter className="flex gap-2">
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/ricallav_/" target="_blank">
             <FaInstagram className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaFacebook className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedin className="w-8 h-8" />
           </a>
         </CardFooter>
       </Card>
@@ -56,17 +47,8 @@ export default function TeamCard() {
           <p>Tuhan pasti memberikan jalan buat kita, tapi belom dicor</p>
         </CardContent>
         <CardFooter className="flex gap-2">
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/a.zhrn_/" target="_blank">
             <FaInstagram className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaFacebook className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedin className="w-8 h-8" />
           </a>
         </CardFooter>
       </Card>
@@ -82,17 +64,8 @@ export default function TeamCard() {
           <p>Jangan berharap kepada tim SAR untuk menemukan jodohmu.</p>
         </CardContent>
         <CardFooter className="flex gap-2">
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/adniaff_/" target="_blank">
             <FaInstagram className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaFacebook className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedin className="w-8 h-8" />
           </a>
         </CardFooter>
       </Card>
@@ -108,17 +81,8 @@ export default function TeamCard() {
           <p>Life is too short. Smile while you still have teeth.</p>
         </CardContent>
         <CardFooter className="flex gap-2">
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/grvyskyy/" target="_blank">
             <FaInstagram className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaFacebook className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedin className="w-8 h-8" />
           </a>
         </CardFooter>
       </Card>
@@ -134,17 +98,8 @@ export default function TeamCard() {
           <p>Segala hal indah pasti berawal dari mimpi, jadi ayo kita tidur.</p>
         </CardContent>
         <CardFooter className="flex gap-2">
-          <a href="#" target="_blank">
+          <a href="http://instagram.com/tthhooomaas" target="_blank">
             <FaInstagram className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaFacebook className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaTwitter className="w-8 h-8" />
-          </a>
-          <a href="#" target="_blank">
-            <FaLinkedin className="w-8 h-8" />
           </a>
         </CardFooter>
       </Card>
