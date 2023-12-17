@@ -10,7 +10,7 @@ import {
 interface Article {
   title: string;
   description: string;
-  date: string;
+  author: string;
   id: number;
 }
 
