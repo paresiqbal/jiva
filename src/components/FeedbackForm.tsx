@@ -52,6 +52,7 @@ export default function FeedbackForm() {
     } catch (error) {
       console.error(error);
     }
+    alert("Terima kasih atas feedbackmu!");
   };
 
   useEffect(() => {
