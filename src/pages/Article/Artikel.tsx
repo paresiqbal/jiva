@@ -16,46 +16,42 @@ interface Article {
 
 const dummyData: Article[] = [
   {
-    title: "Memahami Kekhawatiran",
+    title: "KECEMASAN DAN METODE PENGENDALIANNYA",
     description:
-      "Kekhawatiran ibarat tamu tak diundang dalam pikiran kita, sering kali menyelinap masuk di saat yang tidak kita duga.",
-    date: "12 Des, 2023",
+      "Kecemasan (anxiety) merupakan bagian dari kondisi hidup, artinya kecemasan ada pada setiap orang. Kecemasan merupakan sumber memotivasi untuk berbuat kearah kemajuan",
+    author: "Abdul Hayat",
     id: 1,
   },
   {
-    title: "Strategi Mengatasi Kekhawatiran",
+    title: "Konsep Kecemasan (Anxiety) pada Lanjut Usia (Lansia)",
     description:
-      "Ketika kekhawatiran mulai membebani kita, penting bagi kita untuk mempunyai strategi untuk mengatasinya. Terlibat dalam aktivitas kesadaran, seperti meditasi",
-    date: "07 Oct, 2023",
+      "Lanjut usia merupakan tahap akhir perkembangan pada daur kehidupan manusia yang merupakan suatu proses alami yang tidak dapat dihindari oleh setiap individu. Perubahan-perubahan fisologis",
+    author: "Dona Fitri Annisa & Ifdil",
     id: 2,
   },
   {
-    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    title:
+      "Teori Kecemasan Berdasarkan Psikoanalisis Klasik dan Berbagai Mekanisme Pertahanan terhadap Kecemasan",
     description:
-      "Kekhawatiran sering kali menyertai saat-saat perubahan, namun hal tersebut tidak harus mendikte pengalaman kita. Daripada melihat perubahan hanya melalui kacamata kecemasan, kita bisa melakukannya",
-    date: "30 Arp, 2023",
+      " Teori kecemasan oleh Freud pertama kali diungkapkan tahun 1890, berawal dari sebuah pemikiran bahwa kecemasan merupakan libido yang mengendap. Selanjutnya Freud setuju dengan koleganya Otto Rank bahwa asal mula kecemasan berawal dari trauma masa lahir",
+    author: "Andri, Yenny Dewi P",
     id: 3,
   },
   {
-    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    title: "Edukasi Masyarakat Mengenai Gejala Cemas",
     description:
-      "Kekhawatiran sering kali menyertai saat-saat perubahan, namun hal tersebut tidak harus mendikte pengalaman kita. Daripada melihat perubahan hanya melalui kacamata kecemasan, kita bisa melakukannya",
-    date: "30 Arp, 2023",
+      "Dua tahun terakhir masyarakat dihadapi dengan permasalahan global yaitu pandemi, yang berhubungan dengan berbagai aspek kehidupan.",
+    author:
+      "Resti Rahmadika Akbar, Mutiara Anissa, Insil Pendri Hariyani, Rhandyka Rafli",
     id: 4,
   },
   {
-    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
+    title:
+      "ANALISIS TINGKAT KECEMASAN (ANXIETY) DALAM MENGHADAPI PERTANDINGAN ATLET SEPAK BOLA KABUPATEN BANYUASIN PADA PORPROV 2017",
     description:
-      "Kekhawatiran sering kali menyertai saat-saat perubahan, namun hal tersebut tidak harus mendikte pengalaman kita. Daripada melihat perubahan hanya melalui kacamata kecemasan, kita bisa melakukannya",
-    date: "30 Arp, 2023",
+      "Kecemasan menjadi situasi yang tergambar sangat jelas saat menjelang pertandingan, kecemasan tentu menjadi alasan terhadap buruknya performa atlet dilapangan, situasi demikian terjadi pada atlet sepak bola Kabupaten Banyuaisn menjelang Porprov 2017 di Palembang",
+    author: "HENGKI KUMBARA, YOGI METRA, ZULPIKAR ILHAM",
     id: 5,
-  },
-  {
-    title: "Merangkul Perubahan Positif di Tengah Kekhawatiran",
-    description:
-      "Kekhawatiran sering kali menyertai saat-saat perubahan, namun hal tersebut tidak harus mendikte pengalaman kita. Daripada melihat perubahan hanya melalui kacamata kecemasan, kita bisa melakukannya",
-    date: "30 Arp, 2023",
-    id: 6,
   },
 ];
 
@@ -88,7 +84,7 @@ export default function Artikel() {
                   {data.title}
                 </CardTitle>
                 <CardDescription>{data.description}</CardDescription>
-                <p className="text-sm">{data.date}</p>
+                <p className="text-sm">{data.author}</p>
               </CardHeader>
             </Card>
           </Link>
