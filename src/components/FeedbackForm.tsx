@@ -12,6 +12,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 interface Feedback {
   id: string;
@@ -55,7 +56,7 @@ export default function FeedbackForm() {
 
   useEffect(() => {
     getFeedbackList();
-  }, []);
+  });
 
   const breakpoints = {
     320: { slidesPerView: 1 },
@@ -64,29 +65,37 @@ export default function FeedbackForm() {
   };
 
   return (
-    <div>
-      <div>
-        <h1>Feedback Form</h1>
-        <Input
-          type="text"
-          placeholder="Name"
-          onChange={(e) => setNewFeedbackName(e.target.value)}
-        />
-        <Input
-          type="text"
-          placeholder="Email"
-          onChange={(e) => setNewFeedbackEmail(e.target.value)}
-        />
-        <Input
-          type="text"
-          placeholder="Message"
-          onChange={(e) => setNewFeedbackMessage(e.target.value)}
-        />
-        <button type="submit" onClick={submitFeedback}>
-          Submit
-        </button>
+    <div className="my-8">
+      <div className="p-6 rounded-lg shadow-md mb-8">
+        <h1 className="text-2xl font-semibold mb-4 text-center">
+          Berikan Testimoni mu
+        </h1>
+        <div className="flex flex-col space-y-4">
+          <Input
+            type="text"
+            placeholder="Nama"
+            onChange={(e) => setNewFeedbackName(e.target.value)}
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <Input
+            type="text"
+            placeholder="Email"
+            onChange={(e) => setNewFeedbackEmail(e.target.value)}
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <Input
+            type="text"
+            placeholder="Testimoni"
+            onChange={(e) => setNewFeedbackMessage(e.target.value)}
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+          />
+          <Button type="submit" onClick={submitFeedback}>
+            Submit
+          </Button>
+        </div>
       </div>
       <div>
+        <h2 className="text-3xl py-8 font-semibold text-center">Testimoni</h2>
         <Swiper
           spaceBetween={50}
           breakpoints={breakpoints}

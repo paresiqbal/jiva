@@ -88,10 +88,6 @@ export default function Dashboard() {
 
       <section className="bg-white rounded-md px-6">
         <FeedbackForm />
-        <div className="text-2xl font-semibold text-center mb-4">
-          <h2 className="text-3xl py-8">Testimoni</h2>
-          {/* <FeedbackCard /> */}
-        </div>
       </section>
     </div>
   );
