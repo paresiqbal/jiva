@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBsgzLOq1AlfbsJ0pghiD7L4aFzndo_EQ8",
-  authDomain: "jiva-b2940.firebaseapp.com",
-  projectId: "jiva-b2940",
-  storageBucket: "jiva-b2940.appspot.com",
-  messagingSenderId: "584561041880",
-  appId: "1:584561041880:web:ad4f002e7025d0154752ad",
+  apiKey: "AIzaSyDzc0nJ2tsu2C_7rmOjn5YN3lfLtYYe0fw",
+  authDomain: "next-sosmed-cffb0.firebaseapp.com",
+  projectId: "next-sosmed-cffb0",
+  storageBucket: "next-sosmed-cffb0.appspot.com",
+  messagingSenderId: "850723362822",
+  appId: "1:850723362822:web:0b5f03bd8707d223f08b87",
 };
 
 // Initialize Firebase
