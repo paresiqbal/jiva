@@ -57,7 +57,7 @@ export default function FeedbackForm() {
 
   useEffect(() => {
     getFeedbackList();
-  });
+  }, []);
 
   const breakpoints = {
     320: { slidesPerView: 1 },
