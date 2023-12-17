@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 // components
 import TeamCard from "@/components/TeamCard";
-import FeedbackCard from "@/components/FeedbackCard";
+// import FeedbackCard from "@/components/FeedbackCard";
 import FeedbackForm from "@/components/FeedbackForm";
 
 export default function Dashboard() {
@@ -90,7 +90,7 @@ export default function Dashboard() {
         <FeedbackForm />
         <div className="text-2xl font-semibold text-center mb-4">
           <h2 className="text-3xl py-8">Testimoni</h2>
-          <FeedbackCard />
+          {/* <FeedbackCard /> */}
         </div>
       </section>
     </div>
