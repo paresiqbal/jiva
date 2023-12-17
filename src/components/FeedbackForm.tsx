@@ -1,11 +1,8 @@
-// react
 import { useEffect, useState } from "react";
-
-// firebase
 import { db } from "@/config/firebase-config";
 import { getDocs, collection, addDoc } from "firebase/firestore";
-
-// shadcn
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import {
   Card,
   CardContent,
@@ -14,25 +11,30 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-// import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Input } from "@/components/ui/input";
 
-// swipperJS
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+interface Feedback {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+}
 
 export default function FeedbackForm() {
-  const [feedbackList, setFeedbackList] = useState([]);
+  const [feedbackList, setFeedbackList] = useState<Feedback[]>([]);
   const feedbackColRef = collection(db, "feedback");
 
-  // new feedback
-  const [newFeedbackName, setNewFeedbackName] = useState("");
-  const [newFeedbackEmail, setNewFeedbackEmail] = useState("");
-  const [newFeedbackMessage, setNewFeedbackMessage] = useState("");
+  const [newFeedbackName, setNewFeedbackName] = useState<string>("");
+  const [newFeedbackEmail, setNewFeedbackEmail] = useState<string>("");
+  const [newFeedbackMessage, setNewFeedbackMessage] = useState<string>("");
 
   const getFeedbackList = async () => {
     try {
       const data = await getDocs(feedbackColRef);
-      const filterData = data.docs.map((doc) => ({ ...doc.data() }));
+      const filterData: Feedback[] = data.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      })) as Feedback[];
       setFeedbackList(filterData);
     } catch (error) {
       console.error(error);
@@ -53,9 +55,8 @@ export default function FeedbackForm() {
 
   useEffect(() => {
     getFeedbackList();
-  });
+  }, []);
 
-  // swiper
   const breakpoints = {
     320: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
@@ -66,17 +67,17 @@ export default function FeedbackForm() {
     <div>
       <div>
         <h1>Feedback Form</h1>
-        <input
+        <Input
           type="text"
           placeholder="Name"
           onChange={(e) => setNewFeedbackName(e.target.value)}
         />
-        <input
+        <Input
           type="text"
           placeholder="Email"
           onChange={(e) => setNewFeedbackEmail(e.target.value)}
         />
-        <input
+        <Input
           type="text"
           placeholder="Message"
           onChange={(e) => setNewFeedbackMessage(e.target.value)}
@@ -96,9 +97,9 @@ export default function FeedbackForm() {
         >
           {feedbackList.map((feedback) => (
             <SwiperSlide key={feedback.id}>
-              <Card>
+              <Card className="text-center">
                 <CardHeader>
-                  <CardTitle>{feedback.name}</CardTitle>
+                  <CardTitle className="text-center">{feedback.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{feedback.email}</CardDescription>
