@@ -1,7 +1,16 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp, FirebaseApp } from "firebase/app";
+import { Firestore, getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
+interface FirebaseConfig {
+  apiKey: string;
+  authDomain: string;
+  projectId: string;
+  storageBucket: string;
+  messagingSenderId: string;
+  appId: string;
+}
+
+const firebaseConfig: FirebaseConfig = {
   apiKey: "AIzaSyDzc0nJ2tsu2C_7rmOjn5YN3lfLtYYe0fw",
   authDomain: "next-sosmed-cffb0.firebaseapp.com",
   projectId: "next-sosmed-cffb0",
@@ -11,5 +20,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const app: FirebaseApp = initializeApp(firebaseConfig);
+export const db: Firestore = getFirestore(app);
