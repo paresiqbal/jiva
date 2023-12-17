@@ -10,7 +10,7 @@ import {
 interface Article {
   title: string;
   description: string;
-  author: string;
+  author: string; // Include the 'author' property in the interface
   id: number;
 }
 

@@ -11,12 +11,12 @@ interface FirebaseConfig {
 }
 
 const firebaseConfig: FirebaseConfig = {
-  apiKey: "AIzaSyDzc0nJ2tsu2C_7rmOjn5YN3lfLtYYe0fw",
-  authDomain: "next-sosmed-cffb0.firebaseapp.com",
-  projectId: "next-sosmed-cffb0",
-  storageBucket: "next-sosmed-cffb0.appspot.com",
-  messagingSenderId: "850723362822",
-  appId: "1:850723362822:web:0b5f03bd8707d223f08b87",
+  apiKey: "AIzaSyCTfYnqOUYW5MTS-QvcnUIPD388S6rFjrI",
+  authDomain: "jiva-9307f.firebaseapp.com",
+  projectId: "jiva-9307f",
+  storageBucket: "jiva-9307f.appspot.com",
+  messagingSenderId: "289134277235",
+  appId: "1:289134277235:web:424b14e3de16dff4c3f006",
 };
 
 // Initialize Firebase
