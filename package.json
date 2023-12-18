@@ -1,6 +1,7 @@
 {
   "name": "jiva",
   "private": true,
+  "homepage": "https://jiva.my.id",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
