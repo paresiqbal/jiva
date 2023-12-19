@@ -68,7 +68,7 @@ const Game = () => {
       }
     } else {
       setDisplayTitle("");
-      setDisplayContent("Please enter your name and select a card.");
+      setDisplayContent("Tolong masukan namamu dan pilih salah satu kartu");
     }
   };
 

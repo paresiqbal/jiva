@@ -28,6 +28,7 @@ export default function FeedbackForm() {
   const [newFeedbackName, setNewFeedbackName] = useState<string>("");
   const [newFeedbackEmail, setNewFeedbackEmail] = useState<string>("");
   const [newFeedbackMessage, setNewFeedbackMessage] = useState<string>("");
+  const [isFormValid, setIsFormValid] = useState<boolean>(false);
 
   const getFeedbackList = async () => {
     try {
@@ -49,10 +50,39 @@ export default function FeedbackForm() {
         email: newFeedbackEmail,
         message: newFeedbackMessage,
       });
+      alert("Terima kasih atas feedbackmu!");
+      // Refresh feedback list after successful submission
+      getFeedbackList();
+      // Clear input fields after submission
+      setNewFeedbackName("");
+      setNewFeedbackEmail("");
+      setNewFeedbackMessage("");
     } catch (error) {
       console.error(error);
     }
-    alert("Terima kasih atas feedbackmu!");
+  };
+
+  const handleNameChange = (value: string) => {
+    setNewFeedbackName(value);
+    validateForm();
+  };
+
+  const handleEmailChange = (value: string) => {
+    setNewFeedbackEmail(value);
+    validateForm();
+  };
+
+  const handleMessageChange = (value: string) => {
+    setNewFeedbackMessage(value);
+    validateForm();
+  };
+
+  const validateForm = () => {
+    const isValid =
+      newFeedbackName.trim() !== "" &&
+      newFeedbackEmail.trim() !== "" &&
+      newFeedbackMessage.trim() !== "";
+    setIsFormValid(isValid);
   };
 
   useEffect(() => {
@@ -75,24 +105,25 @@ export default function FeedbackForm() {
           <Input
             type="text"
             placeholder="Nama"
-            onChange={(e) => setNewFeedbackName(e.target.value)}
+            onChange={(e) => handleNameChange(e.target.value)}
             className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Input
             type="text"
             placeholder="Email"
-            onChange={(e) => setNewFeedbackEmail(e.target.value)}
+            onChange={(e) => handleEmailChange(e.target.value)}
             className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Input
             type="text"
             placeholder="Testimoni"
-            onChange={(e) => setNewFeedbackMessage(e.target.value)}
+            onChange={(e) => handleMessageChange(e.target.value)}
             className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Button
             type="submit"
             onClick={submitFeedback}
+            disabled={!isFormValid} // Disable button if form is not valid
             className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
           >
             Kirim
