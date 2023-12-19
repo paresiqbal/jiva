@@ -42,7 +42,7 @@ export default function FeedbackForm() {
     }
   };
 
-  const submitFeedback = async (e) => {
+  const submitFeedback = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevents default form submission behavior (page refresh)
 
     // Check if any of the required fields are empty
