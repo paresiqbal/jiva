@@ -42,32 +42,17 @@ export default function FeedbackForm() {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    await submitFeedback(e);
-
-    // Check if any of the required fields are empty
-    if (!newFeedbackName || !newFeedbackEmail || !newFeedbackMessage) {
-      alert("Tolong di isi dulu ya form nya 😉."); // Alert the user about empty fields
-      return; // Prevents further execution of the function
-    }
-
+  const submitFeedback = async () => {
     try {
       await addDoc(feedbackColRef, {
         name: newFeedbackName,
         email: newFeedbackEmail,
         message: newFeedbackMessage,
       });
-      alert("Terima kasih atas feedbackmu! 😁"); // Confirmation alert upon successful submission
-      // Clear the form fields after successful submission
-      setNewFeedbackName("");
-      setNewFeedbackEmail("");
-      setNewFeedbackMessage("");
-      getFeedbackList(); // Refresh feedback list after submission
     } catch (error) {
       console.error(error);
-      alert("Oops! Something went wrong."); // Alert the user about the error
     }
+    alert("Terima kasih atas feedbackmu!");
   };
 
   useEffect(() => {
@@ -86,7 +71,7 @@ export default function FeedbackForm() {
         <h1 className="text-2xl font-semibold mb-4 text-center">
           Berikan Testimoni mu
         </h1>
-        <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
+        <div className="flex flex-col space-y-4">
           <Input
             type="text"
             placeholder="Nama"
@@ -106,12 +91,13 @@ export default function FeedbackForm() {
             className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Button
-            type="button"
+            type="submit"
+            onClick={submitFeedback}
             className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
           >
             Kirim
           </Button>
-        </form>
+        </div>
       </div>
       <div>
         <h2 className="text-3xl py-8 font-semibold text-center">Testimoni</h2>
