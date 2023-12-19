@@ -9,9 +9,6 @@ export default function Footer() {
           <img src={jiva} alt="logo" className="w-12 h-12" />
           &copy; JIVA
         </h2>
-        <div className="my-4">
-          <h3 className="font-semibold text-xl pb-2">Contact</h3>
-        </div>
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <p className="mb-2 md:mb-0">
             <span className="font-semibold">Email:</span>
