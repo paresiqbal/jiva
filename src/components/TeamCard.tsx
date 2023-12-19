@@ -19,7 +19,7 @@ import thomas from "@/assets/thomas.jpg";
 export default function TeamCard() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-content-center">
-      <Card className="flex flex-col items-center text-center">
+      <Card className="flex flex-col items-center text-center bg-[#d1ded7]">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
             <AvatarImage src={rical} className="mx-auto object-cover" />
@@ -36,7 +36,7 @@ export default function TeamCard() {
         </CardFooter>
       </Card>
 
-      <Card className="flex flex-col items-center text-center">
+      <Card className="flex flex-col items-center text-center bg-[#d1ded7]">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
             <AvatarImage src={alifia} className="mx-auto object-cover" />
@@ -53,7 +53,7 @@ export default function TeamCard() {
         </CardFooter>
       </Card>
 
-      <Card className="flex flex-col items-center text-center">
+      <Card className="flex flex-col items-center text-center bg-[#d1ded7]">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
             <AvatarImage src={adni} className="mx-auto object-cover" />
@@ -70,7 +70,7 @@ export default function TeamCard() {
         </CardFooter>
       </Card>
 
-      <Card className="flex flex-col items-center text-center">
+      <Card className="flex flex-col items-center text-center bg-[#d1ded7]">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
             <AvatarImage src={gisna} className="mx-auto object-cover" />
@@ -87,7 +87,7 @@ export default function TeamCard() {
         </CardFooter>
       </Card>
 
-      <Card className="flex flex-col items-center text-center">
+      <Card className="flex flex-col items-center text-center bg-[#d1ded7]">
         <CardHeader className="flex flex-col items-center">
           <Avatar className="items-center">
             <AvatarImage src={thomas} className="mx-auto object-cover" />

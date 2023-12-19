@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   return (
     <div className="text-xl py-12 flex flex-col gap-8">
-      <section className="bg-white rounded-md px-6">
+      <section className="bg-[#d1ded7] rounded-md px-6">
         <div className="text-center ">
           <h1 className="text-8xl lg:text-9xl font-extrabold font-custom py-12">
             JIVA
@@ -42,11 +42,18 @@ export default function Dashboard() {
           </p>
         </div>
         <div className="py-12 flex flex-col justify-center gap-4 items-center border-b-2 ">
-          <Button onClick={scrollToContent} className="px-10 py-6 text-xl">
+          <Button
+            onClick={scrollToContent}
+            className="px-10 py-6 text-xl bg-[#f1f3f2] active:bg-[#576b62] hover:bg-[#689986] text-gray-800 hover:text-white"
+          >
             Kenapa JIVA ?
           </Button>
           <div className="flex justify-between gap-2">
-            <Button onClick={scrollToContact} variant="outline">
+            <Button
+              onClick={scrollToContact}
+              variant="outline"
+              className="text-gray-900 hover:text-white hover:bg-[#689986] active:bg-[#576b62]"
+            >
               Hubungi Kami
             </Button>
             <a href="/mood">
@@ -61,7 +68,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section className="bg-white rounded-md px-6">
+      <section className="bg-[#d1ded7] rounded-md px-6">
         <div
           ref={contentRef}
           className="mx-auto flex pt-16 pb-10 flex-col lg:flex-row items-center justify-center gap-8 lg:gap-32 border-b-2 "
@@ -79,14 +86,14 @@ export default function Dashboard() {
           <img className="lg:w-1/6 sm:w-1/4 pb-2" src={loveImage} alt="love" />
         </div>
       </section>
-      <section className="bg-white rounded-md px-6">
+      <section className="bg-[#f1f3f2] rounded-md px-6">
         <div className="py-8 border-b-2">
           <h2 className="text-3xl font-semibold pb-8 text-center">Our Team</h2>
           <TeamCard />
         </div>
       </section>
 
-      <section className="bg-white rounded-md px-6">
+      <section className="bg-[#f1f3f2] rounded-md px-6">
         <FeedbackForm />
       </section>
     </div>

@@ -76,22 +76,26 @@ export default function FeedbackForm() {
             type="text"
             placeholder="Nama"
             onChange={(e) => setNewFeedbackName(e.target.value)}
-            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+            className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Input
             type="text"
             placeholder="Email"
             onChange={(e) => setNewFeedbackEmail(e.target.value)}
-            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+            className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Input
             type="text"
             placeholder="Testimoni"
             onChange={(e) => setNewFeedbackMessage(e.target.value)}
-            className="border border-gray-300 rounded px-3 py-2 focus:outline-none"
+            className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
-          <Button type="submit" onClick={submitFeedback}>
-            Submit
+          <Button
+            type="submit"
+            onClick={submitFeedback}
+            className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
+          >
+            Kirim
           </Button>
         </div>
       </div>
@@ -107,7 +111,7 @@ export default function FeedbackForm() {
         >
           {feedbackList.map((feedback) => (
             <SwiperSlide key={feedback.id}>
-              <Card className="text-center">
+              <Card className="text-center bg-[#d1ded7]">
                 <CardHeader>
                   <CardTitle className="text-center">{feedback.name}</CardTitle>
                 </CardHeader>
