@@ -42,9 +42,9 @@ export default function FeedbackForm() {
     }
   };
 
-  const handleButtonClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+  const handleButtonClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    submitFeedback(e as React.FormEvent<HTMLFormElement>);
+    await submitFeedback(e as React.FormEvent<HTMLFormElement>);
 
     // Check if any of the required fields are empty
     if (!newFeedbackName || !newFeedbackEmail || !newFeedbackMessage) {
@@ -106,7 +106,7 @@ export default function FeedbackForm() {
             className="border border-[#689986] rounded px-3 py-2 focus:outline-none"
           />
           <Button
-            type="submit"
+            type="button"
             onClick={handleButtonClick}
             className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
           >
