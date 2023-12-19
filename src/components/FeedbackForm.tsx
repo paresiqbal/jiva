@@ -42,8 +42,9 @@ export default function FeedbackForm() {
     }
   };
 
-  const submitFeedback = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevents default form submission behavior (page refresh)
+  const handleButtonClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.preventDefault();
+    submitFeedback(e as React.FormEvent<HTMLFormElement>);
 
     // Check if any of the required fields are empty
     if (!newFeedbackName || !newFeedbackEmail || !newFeedbackMessage) {
@@ -106,7 +107,7 @@ export default function FeedbackForm() {
           />
           <Button
             type="submit"
-            onClick={submitFeedback}
+            onClick={handleButtonClick}
             className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
           >
             Kirim
