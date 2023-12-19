@@ -106,12 +106,17 @@ const Game = () => {
           placeholder="Masukan namamu"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          className="border-[#689986]"
         />
         <div className="emote-card-container">
           <EmoteCard onSelect={handleCardSelect} />
         </div>
-        <Button type="button" onClick={handleSubmit}>
-          Submit
+        <Button
+          type="button"
+          onClick={handleSubmit}
+          className="my-6 bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
+        >
+          Kirim
         </Button>
         {renderCardMessages()}
       </div>

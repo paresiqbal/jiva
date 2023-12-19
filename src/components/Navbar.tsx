@@ -37,7 +37,7 @@ export default function Navbar() {
   }, [location]);
 
   return (
-    <nav ref={navbarRef} className="mx-auto p-4 lg:p-0 bg-white border-b-2">
+    <nav ref={navbarRef} className="mx-auto p-4 lg:p-0 bg-[#f1f3f2] border-b-2">
       <div className="container mx-auto flex items-center justify-between">
         <button
           id="menu"
@@ -65,7 +65,7 @@ export default function Navbar() {
           role="menubar"
           className={`${
             isOpen ? "flex flex-col" : "hidden"
-          } lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full absolute right-0 left-0 top-16 bg-white shadow-xl text-center p-6 text-lg font-semibold items-center`}
+          } lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full absolute right-0 left-0 top-16 bg-[#f1f3f2] shadow-xl text-center p-6 text-lg font-semibold items-center`}
         >
           <NavLink
             to="/"
