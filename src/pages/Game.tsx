@@ -97,10 +97,10 @@ const Game = () => {
 
   return (
     <div className="py-12">
-      <div className="bg-[#9DC183] rounded-md px-6 py-2 mb-2">
+      <div className="bg-[#f1f3f2] rounded-md px-6 py-2 mb-2">
         <h1 className="text-3xl font-bold">Test Kecemasan mu hari ini</h1>
       </div>
-      <div className="flex flex-col gap-2 w-full bg-white rounded-md px-6 py-2">
+      <div className="flex flex-col gap-2 w-full bg-[#f1f3f2] rounded-md px-6 py-2">
         <Input
           type="text"
           placeholder="Masukan namamu"

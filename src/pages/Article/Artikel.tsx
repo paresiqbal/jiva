@@ -72,13 +72,13 @@ export default function Artikel() {
 
   return (
     <div className="py-12">
-      <h1 className="text-3xl font-bold mb-4 bg-white p-2 rounded-md">
+      <h1 className="text-3xl font-bold mb-4 bg-[#d1ded7] p-2 rounded-md">
         ARTIKEL
       </h1>
       <div>
         {currentArticles.map((data) => (
           <Link to={`/ArtikelDetail/${data.id}`} key={data.id}>
-            <Card className="mb-4">
+            <Card className="mb-4 bg-[#d1ded7]">
               <CardHeader>
                 <CardTitle className="text-lg underline hover:cursor-pointer font-semibold">
                   {data.title}
@@ -96,7 +96,7 @@ export default function Artikel() {
             key={pageNumber + 1}
             onClick={() => handlePageChange(pageNumber + 1)}
             className={`mx-2 py-1 px-3 rounded-lg ${
-              currentPage === pageNumber + 1 ? "bg-primary" : "bg-gray-100"
+              currentPage === pageNumber + 1 ? "bg-[#689986]" : "bg-[#f1f3f2]"
             }`}
           >
             {pageNumber + 1}

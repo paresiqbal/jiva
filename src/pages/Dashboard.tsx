@@ -52,15 +52,12 @@ export default function Dashboard() {
             <Button
               onClick={scrollToContact}
               variant="outline"
-              className="text-gray-900 hover:text-white hover:bg-[#689986] active:bg-[#576b62]"
+              className="text-gray-900 bg-white hover:text-white hover:bg-[#689986] active:bg-[#576b62]"
             >
               Hubungi Kami
             </Button>
             <a href="/mood">
-              <Button
-                variant="outline"
-                className="hover:bg-primary hover:text-white"
-              >
+              <Button variant="outline" className="bg-[#689986] hover:bg-white">
                 Tes Kecemasanmu Hari ini ?
               </Button>
             </a>

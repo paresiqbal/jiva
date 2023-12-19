@@ -59,7 +59,7 @@ export default function ArtikelDetail() {
 
   return (
     <div className="mx-auto py-12">
-      <div className="px-6 bg-white py-4 rounded-md">
+      <div className="px-6 bg-[#d1ded7] py-4 rounded-md">
         <div className="mb-4 ">
           <h2 className="text-3xl font-bold">{article.title}</h2>
           <p className="text-gray-500">{article.author}</p>
@@ -76,7 +76,9 @@ export default function ArtikelDetail() {
           to="/artikel"
           className="text-blue-500 hover:underline mb-4 block my-4"
         >
-          <Button> &lt; Kembali ke Artikel</Button>
+          <Button className="bg-[#689986] hover:bg-[#576b62]">
+            &lt; Kembali ke Artikel
+          </Button>
         </Link>
       </div>
     </div>

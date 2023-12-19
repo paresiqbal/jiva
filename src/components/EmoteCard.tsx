@@ -40,8 +40,8 @@ export default function EmoteCard({ onSelect }: EmoteCardProps) {
       {images.map((image: string, index: number) => (
         <Card
           key={index}
-          className={`text-center p-2 ${
-            selectedCard === index ? "bg-primary" : ""
+          className={`text-center p-2 bg-[#d1ded7] ${
+            selectedCard === index ? "bg-[#689986]" : ""
           }`}
           onClick={() => handleClick(index)}
         >
