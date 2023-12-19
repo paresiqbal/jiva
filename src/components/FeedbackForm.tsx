@@ -42,9 +42,9 @@ export default function FeedbackForm() {
     }
   };
 
-  const handleButtonClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await submitFeedback(e as React.FormEvent<HTMLFormElement>);
+    await submitFeedback(e);
 
     // Check if any of the required fields are empty
     if (!newFeedbackName || !newFeedbackEmail || !newFeedbackMessage) {
@@ -86,7 +86,7 @@ export default function FeedbackForm() {
         <h1 className="text-2xl font-semibold mb-4 text-center">
           Berikan Testimoni mu
         </h1>
-        <div className="flex flex-col space-y-4">
+        <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
           <Input
             type="text"
             placeholder="Nama"
@@ -107,12 +107,11 @@ export default function FeedbackForm() {
           />
           <Button
             type="button"
-            onClick={handleButtonClick}
             className="text-gray-900 hover:text-white bg-[#689986] hover:bg-[#689986] active:bg-[#576b62]"
           >
             Kirim
           </Button>
-        </div>
+        </form>
       </div>
       <div>
         <h2 className="text-3xl py-8 font-semibold text-center">Testimoni</h2>
