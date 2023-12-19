@@ -42,17 +42,31 @@ export default function FeedbackForm() {
     }
   };
 
-  const submitFeedback = async () => {
+  const submitFeedback = async (e) => {
+    e.preventDefault(); // Prevents default form submission behavior (page refresh)
+
+    // Check if any of the required fields are empty
+    if (!newFeedbackName || !newFeedbackEmail || !newFeedbackMessage) {
+      alert("Tolong di isi dulu ya form nya 😉."); // Alert the user about empty fields
+      return; // Prevents further execution of the function
+    }
+
     try {
       await addDoc(feedbackColRef, {
         name: newFeedbackName,
         email: newFeedbackEmail,
         message: newFeedbackMessage,
       });
+      alert("Terima kasih atas feedbackmu! 😁"); // Confirmation alert upon successful submission
+      // Clear the form fields after successful submission
+      setNewFeedbackName("");
+      setNewFeedbackEmail("");
+      setNewFeedbackMessage("");
+      getFeedbackList(); // Refresh feedback list after submission
     } catch (error) {
       console.error(error);
+      alert("Oops! Something went wrong."); // Alert the user about the error
     }
-    alert("Terima kasih atas feedbackmu!");
   };
 
   useEffect(() => {
